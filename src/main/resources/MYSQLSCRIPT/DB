@@ -1,0 +1,15 @@
+CREATE TABLE producto (
+    idproducto INT AUTO_INCREMENT NOT NULL,
+    producto VARCHAR(50) NOT NULL,
+    descripcion VARCHAR(50) NULL,
+    cantidad INT NOT NULL,
+    fechavencimiento DATE,
+    PRIMARY KEY (idProducto)
+);
+
+INSERT INTO producto (producto, descripcion, cantidad, fechavencimiento)
+VALUES
+    ('Producto 1', 'Descripción del Producto 1', 10, '2023-11-15'),
+    ('Producto 2', 'Descripción del Producto 2', 5, '2024-02-20'),
+    ('Producto 3', 'Descripción del Producto 3', 15, '2023-12-10'),
+    ('Producto 4', 'Descripción del Producto 4', 8, '2023-11-30');
