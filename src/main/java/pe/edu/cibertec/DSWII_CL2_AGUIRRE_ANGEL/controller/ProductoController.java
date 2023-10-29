@@ -21,7 +21,7 @@ public class ProductoController {
     private ProductoRepository productoRepository;
 
 
-    @GetMapping("/")
+    @GetMapping("/productos")
     public Iterable<Producto> listarProductos() {
         return productoService.obtenerTodosLosProductos();
     }
